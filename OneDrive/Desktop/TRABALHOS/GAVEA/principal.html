@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="principal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas Aplicadas - GAVEA</title>
+    <style>
+    
+        .principal-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        .principal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .controls-bar {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .vagas-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Open Sans', sans-serif;
+            box-shadow: 0 2px 4px rgba(42, 0, 249, 0.1);
+        }
+        .vagas-table th, .vagas-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }                               
+        .vagas-table th {
+            background-color: #f2f2f2;
+            color: blue;
+        }
+        .status-chip {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .status-verde { background-color: #d4edda; color: #155724; }
+        .status-amarelo { background-color: #fff3cd; color: #856404; }
+        .status-vermelho { background-color: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="principal-container">
+        <header class="principal-header">
+            <h1>Candidaturas</h1>
+            <button type="button" class="btn-sincronizar" style="
+                border: none; background-color: #007bff; color: white; padding: 10px 15px; 
+                font-size: 1rem; font-weight: bold; border-radius: 0.5rem; cursor: pointer;">
+                🔄 Sincronizar Vagas
+            </button>
+        </header>
+
+        <div class="controls-bar">
+            <select class="control-select field-container input" style="padding: 8px;">
+                <option>Agrupar por Empresa</option>
+                <option>Agrupar por Status</option>
+                <option>Agrupar por Data</option>
+            </select>
+            <input type="text" placeholder="Filtrar por nome ou requisitos..." class="field-container input" style="padding: 8px; flex-grow: 1;">
+        </div>
+
+        <table class="vagas-table">
+            <thead>
+                <tr>
+                    <th>Vaga</th>
+                    <th>Empresa</th>
+                    <th>Status</th>
+                    <th>Aplicado em</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-status="entrevista">
+                    <td>Estágio em Engenharia de Software <a href="#" target="_blank">🔗</a></td>
+                    <td>Tech Solutions</td>
+                    <td><span class="status-chip status-verde">Pronto p/ Entrevista</span></td>
+                    <td>2025-10-25</td>
+                    <td class="action-cells">
+                        <button class="btn-action">✏️ Etapa</button>
+                        <button class="btn-action btn-danger">🗑️ Remover</button>
+                    </td>
+                </tr>
+                <tr data-status="analise">
+                    <td>Estágio em Análise de Dados</td>
+                    <td>Data Corp</td>
+                    <td><span class="status-chip status-amarelo">Em Análise</span></td>
+                    <td>2025-11-10</td>
+                    <td class="action-cells">
+                        <button class="btn-action">✏️ Etapa</button>
+                        <button class="btn-action btn-danger">🗑️ Remover</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>   
+    </div>
+    <a href="suporte.html" class="btn-fixed-action">
+Suporte </a>
+</body>
+</html>
+</body>
+</html>

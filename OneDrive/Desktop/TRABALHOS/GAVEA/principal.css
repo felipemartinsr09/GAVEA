@@ -1,0 +1,142 @@
+
+.principal-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+.principal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.principal-container h1, .principal-container h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Stack Sans Notch", sans-serif;
+    margin: 0;
+}
+.controls-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.control-select, .controls-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: rgb(43, 1, 121);
+}
+
+.vagas-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vagas-table th, .vagas-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+     background-color: rgba(255, 255, 255, 0.9);
+}
+
+.vagas-table th {
+    background-color: #f0f8ff;
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+     background-color: rgba(255, 255, 255, 0.9);
+}
+
+.action-cells button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.btn-action {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-action:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+.btn-danger:hover {
+    background-color: #bd2130;
+}
+
+.status-chip {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.status-verde {
+    background-color: #d4edda;
+    color: #155724;
+}
+.status-amarelo {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.status-vermelho {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.btn-sincronizar {
+
+    border: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-sincronizar:hover {
+    background-color: #1e7e34;
+}
+body {
+    background-image: url('Fundo_Tela_Principal.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+   }
+  .btn-fixed-action {
+position: fixed;
+bottom: 30px;
+ right: 30px;
+ border: none;
+ background-color: #002fff;
+ color: white;
+padding: 15px 25px;
+font-size: 1.1rem;
+ font-weight: bold;
+ border-radius: 0.5rem;
+ cursor: pointer;
+ text-decoration: none;
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+ transition: background-color 0.3s, transform 0.3s;
+ z-index: 1000;
+}
+
+.btn-fixed-action:hover {
+ background-color: #001df7;
+ transform: translateY(-3px);
+}

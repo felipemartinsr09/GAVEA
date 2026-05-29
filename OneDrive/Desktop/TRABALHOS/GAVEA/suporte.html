@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="suporte.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - GAVEA</title>
+</head>
+<body>
+    <h1>SUPORTE</h1>
+    <h2>Envie sua dúvida ou solicitação. Responderemos rapidamente.</h2>
+    <form>
+        <div class="nome-container field-container">
+            <label for="nome_suporte">Seu Nome</label>
+            <input type="text" name="nome_suporte" id="nome_suporte" required>
+        </div>
+        <div class="email-container field-container">
+            <label for="email_suporte">Seu Email</label>
+            <input type="email" name="email_suporte" id="email_suporte" required>
+        </div>
+
+        <div class="field-container">
+            <label for="assunto">Assunto</label>
+            <input type="text" name="assunto" id="assunto" required>
+        </div>
+
+        <div class="field-container">
+            <label for="mensagem">Mensagem / Descrição</label>
+            <textarea id="mensagem" name="mensagem" rows="6" class="custom-textarea" required></textarea>
+        </div>
+
+        <input type="submit" value="Enviar Solicitação">
+    </form>
+
+    <style> 
+        .custom-textarea {
+            width: 100%;
+            border: 1px solid blue;
+            outline: none;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            color: rgb(43, 1, 121);
+            border-radius: 0.8rem;
+            resize: vertical;
+        }
+    </style>
+</body>
+</html>
